@@ -56,7 +56,7 @@ from cryptography.hazmat.backends import default_backend
 api_url = "http://horven-api.sumpahpalapa.com/api/transaction/mobile.json"
 #   api_url = variabel untuk menyimpan URL untuk top up pulsa
 #   kenapa dibutuhkan? sebagai destination adress untuk kirim request
-username = os.environ["ALTERRA_USERNAME"]
+username = os.environ["alterra_username"]
 password = os.environ["alterra_pwd_dev"]
 #   username = variabel untuk menyimpan username
 #   password = variabel untuk menyimpan passsword
@@ -133,7 +133,11 @@ def decrypt_Auth(ciphertext_hex, nonce_hex, tag_hex, execMode):
 #   Jika kamu menulis TV.Power(), maka hanya TV yang menyala.
 #   Jika kamu menulis AC.Power(), maka hanya AC yang menyala.
     try:
+#   try = mencoba menjalankan kode di dalamnya
         plaintext = decryptor.update(ciphertext) + decryptor.finalize()
+#   decryptor = cek line 98
+#   decryptor.update(ciphertext) = object.method(parameter)
+#   ciphertext = cek line 86
     except Exception as e:
         print(e)
         return False
