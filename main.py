@@ -139,6 +139,7 @@ def decrypt_Auth(ciphertext_hex, nonce_hex, tag_hex, execMode):
 #   decryptor.update(ciphertext) = object.method(parameter)
 #   ciphertext = cek line 86
     except Exception as e:
+#   except Exception as e: = kalau ada error apapun (Exception), tangkap errornya dan simpan detail errornya ke variabel e
         print(e)
         return False
     
