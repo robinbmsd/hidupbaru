@@ -1,8 +1,17 @@
+import random
+import string
+import time
 import os
 #   import = perintah untuk "memanggil" atau "meminjam" alat/fungsi dari tempat lain
 #   os = (1) Operating System, ini library untuk berinteraksi dengan OS bawaan (Windows, Linux, MacOS) secara portable.
 #   (2) Modul ini memungkinkan user mengelola folder, path, dan environments variable dan controlling the os untuk kebutuhan di API ini.
 #   kenapa dibutuhkan? Kenapa dibutuhkan? Karena kita mau ambil username & password yang disimpan di environment variable (lebih aman daripada tulis langsung di code)
+import random
+#   random = digunakan untuk menghasilkan nilai acak (angka, pilihan karakter, urutan)
+import string
+#   string = menyediakan kumpulan karakter siap pakai (huruf, digit, simbol)
+import time
+#   time = berhubungan dengan waktu: delay, timestamp, dan pengukuran durasi eksekusi
 import requests
 #   requests = library untuk kirim HTTP request (GET, POST, dll) dan berkomukiasi dengan server lain
 #   kenapa dibutuhkan? karena kita mau kirim data ke API Sumpahpalapa (yang ada di http://horven-api.sumpahpalapa.com)
