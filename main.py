@@ -151,6 +151,5 @@ def decrypt_Auth(ciphertext_hex, nonce_hex, tag_hex, execMode):
 #   except Exception as e: = kalau ada error apapun (Exception), catch errornya dan simpan detail errornya ke variabel e
         print(e)
 #   pesan error-nya di console/terminal supaya programmer tahu error apa yang terjadi (untuk debugging)
-        return False
-    
+        return False   
     return plaintext.decode("utf-8")
